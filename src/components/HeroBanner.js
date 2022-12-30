@@ -20,12 +20,13 @@ const HeroBanner = () => {
             And Repeat
         </Typography>
 
-        <Typography fontSize='22px' fontFamily='Alegreya' lineHeight='35px' mb={4}>
+        <Typography fontSize='22px' fontFamily='Alegreya' lineHeight='35px'>
             Check out the most effective exercises
         </Typography>
 
-        <Button variant='contained' color='error' href='#exercises' sx={ {backgroundColor: '#ff2625', padding: '10px'}} >
-        Explore Exercises<Button />
+        <Stack>
+            <a href="#exercises" style={{ marginTop: '45px', textDecoration: 'none', width: '200px', textAlign: 'center', background: '#FF2625', padding: '14px', fontSize: '22px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>Explore Exercises</a>
+        </Stack>
         
         <Typography fontWeight={600} color="#ff2625" sx={{ 
             opacity: 0.1,
@@ -34,7 +35,7 @@ const HeroBanner = () => {
             Exercise
         </Typography>
         <img src={HeroBannerImage} alt='hero-banner' className='hero-banner-img'></img>
-        </Button>
+        
     </Box>
   )
 }
