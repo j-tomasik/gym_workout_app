@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box } from '@mui/material';
+import React, { useContext } from 'react';
+import { Box, Typography } from '@mui/material';
 import BodyPart from './BodyPart';
 import {ScrollMenu, VisibilityConext } from 'react-horizontal-scrolling-menu';
 
@@ -25,7 +25,7 @@ const RightArrow = () => {
 
 const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
   return (
-    <ScrollMenu>
+    <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
         {data.map((item) => 
         <Box
         key={item.id || item} 
