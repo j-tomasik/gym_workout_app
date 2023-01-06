@@ -7,7 +7,22 @@ import {exerciseOptions, fetchData } from '../util/fetchData';
 
 const Exercises = ({exercises, setExerercises, bodyPart}) => {
   return (
-    <div>Exercises</div>
+    <Box id="exercises"
+      sx={{mt: {lg: '110px' }}}
+      mt='50px'
+      p='20px'
+    >
+      <Typography variant='h3' marginBottom='46px'>
+        Showing Results
+      </Typography>
+
+      <Stack direction='row' sx={{gap: {lg: '110', xs: '50px'}}}
+      flexWrap='wrap' justifyContent='center'>
+        {exercises.map((exercise, index) => {
+          <p>{exercise.name}</p>
+        })}
+      </Stack>
+    </Box>
   )
 }
 
