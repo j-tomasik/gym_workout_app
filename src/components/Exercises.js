@@ -23,6 +23,15 @@ const Exercises = ({exercises, setExerercises, bodyPart}) => {
           <ExerciseCard key={index} exercise={exercise} /> 
         })}
       </Stack>
+
+      <Stack mt='100px' alignItems='center'>
+        {exercises.length > 9 && (
+          <Pagination 
+            color='standard'
+            shape='rounded'
+          />
+        )}
+      </Stack>
     </Box>
   )
 }
