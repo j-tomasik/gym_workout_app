@@ -7,6 +7,9 @@ import ExerciseCard from './ExerciseCard';
 
 
 const Exercises = ({exercises, setExerercises, bodyPart}) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const exercisePerPage = 9;
+
   return (
     <Box id="exercises"
       sx={{mt: {lg: '110px' }}}
@@ -29,6 +32,11 @@ const Exercises = ({exercises, setExerercises, bodyPart}) => {
           <Pagination 
             color='standard'
             shape='rounded'
+            defaultPage={1}
+            count={Math.ceil(exercises.length / 9)}
+            page={currentPage}
+            onChange={paginate}
+            size='large'
           />
         )}
       </Stack>
