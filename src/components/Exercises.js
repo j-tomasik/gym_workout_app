@@ -32,7 +32,7 @@ const Exercises = ({exercises, setExerercises, bodyPart}) => {
 
       <Stack direction='row' sx={{gap: {lg: '110', xs: '50px'}}}
       flexWrap='wrap' justifyContent='center'>
-        {exercises.map((exercise, index) => {
+        {currentExercises.map((exercise, index) => {
           <ExerciseCard key={index} exercise={exercise} /> 
         })}
       </Stack>
