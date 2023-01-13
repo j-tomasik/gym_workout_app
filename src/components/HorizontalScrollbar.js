@@ -1,7 +1,9 @@
 import React, { useContext } from 'react';
 import { Box, Typography } from '@mui/material';
 import BodyPart from './BodyPart';
-import {ScrollMenu, VisibilityConext } from 'react-horizontal-scrolling-menu';
+import {ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+import RightArrowIcon from '../assets/icons/right-arrow.png';
+import LeftArrowIcon from '../assets/icons/left-arrow.png';
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
