@@ -35,7 +35,8 @@ const ExerciseDetail = () => {
       setEquipmentExercises(equipmentExercisesData);
     }
 
-    fetchExercisesData()
+    fetchExercisesData();
+    window.scrollTo(0,0)
   }, [id]);
 
   return (
