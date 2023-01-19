@@ -32,7 +32,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
       } else {
         exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions);
       }
-      console.log(exercisesData)
+      // console.log(exercisesData)
       setExercises(exercisesData)
     };
 
@@ -41,7 +41,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
   }, [bodyPart]);
 
   if(!currentExercises.length) return <Loader />
-
+  
   return (
     <Box id="exercises"
       sx={{mt: {lg: '110px' }}}
@@ -52,11 +52,11 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
         Showing Results
       </Typography>
 
-      <Stack direction='row' sx={{gap: {lg: '110', xs: '50px'}}}
+      <Stack direction='row' sx={{gap: {lg: '107px', xs: '50px'}}}
       flexWrap='wrap' justify='center'>
-        {currentExercises.map((exercise, index) => {
+        {currentExercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} /> 
-        })}
+        ))}
       </Stack>
 
       <Stack mt='100px' alignItems='center'>
