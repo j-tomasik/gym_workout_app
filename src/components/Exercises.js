@@ -32,7 +32,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
       } else {
         exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions);
       }
-      // console.log(exercisesData)
+      
       setExercises(exercisesData)
     };
 
