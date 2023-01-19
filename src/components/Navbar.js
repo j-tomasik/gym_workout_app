@@ -4,8 +4,7 @@ import { Stack } from '@mui/material'
 
 import Logo from '../assets/images/Logo.png'
 
-const Navbar = () => {
-  return (
+const Navbar = () => (
     <Stack direction='row' justify='space-around' sx={{ gap: {
         sm: '123px', xs: '40px'}, mt: { sm: '32px', xs: '20px'}, justify: 'none' }} px='20px'>
         <Link to='/'>
@@ -22,6 +21,5 @@ const Navbar = () => {
         
     </Stack>
   )
-}
 
 export default Navbar
