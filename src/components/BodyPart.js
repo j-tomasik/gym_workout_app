@@ -11,12 +11,13 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
         justify='center'
         className='bodyPart-card'
         sx={{
-            borderTop: bodyPart === item ? '4px solid #ff2625' : '',
+            border: bodyPart === item ? '4px solid #ff2625' : '',
             backgroundColor: '#fff',
             borderBottomLeftRadius: '20px',
             width: '270px',
             height: '280px',
             cursor: 'pointer', 
+            padding: '5px',
             gap: '47px'
         }}
         onClick={() => {
