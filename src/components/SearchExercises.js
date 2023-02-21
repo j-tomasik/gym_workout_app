@@ -81,6 +81,7 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
         </Box>
 
         <Box sx={{position: 'relative', width: '100%', p: '20px'}}>
+          <Typography variant="h6" sx={{alignItems: "center", marginLeft: '40px'}}> Scroll Right and Left with Two Finger Drag or Mouse</Typography>
           <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyParts/>
         </Box>
     </Stack>
