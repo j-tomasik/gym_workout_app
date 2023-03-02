@@ -9,7 +9,7 @@ const Footer = () => {
             <img src={Logo} alt='logo' width='200px' height='40px' mt='20px'/>
 
             <Typography variant='h5' pb='40px' mt='20px'>
-                Made with ❤️ by Jack Tomasik
+                Made with ❤️ by <a href="https://www.linkedin.com/in/jack-tomasik-530ab816b/">Jack Tomasik</a>
             </Typography>
         </Stack>
     </Box>

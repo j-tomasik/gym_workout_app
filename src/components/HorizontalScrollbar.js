@@ -3,11 +3,11 @@ import { Box, Typography} from '@mui/material';
 import BodyPart from './BodyPart';
 import ExerciseCard from './ExerciseCard'
 import {ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
-import RightArrowIcon from '../assets/icons/right-arrow.png';
-import LeftArrowIcon from '../assets/icons/left-arrow.png';
+// import RightArrowIcon from '../assets/icons/right-arrow.png';
+// import LeftArrowIcon from '../assets/icons/left-arrow.png';
 
 // const LeftArrow = () => {
-//   const { scrollPrev, isFirstItemVisible } = useContext(VisibilityContext);
+//   const { scrollPrev } = useContext(VisibilityContext);
 
 //   return (
 //     <Typography onClick={() => 
@@ -19,7 +19,7 @@ import LeftArrowIcon from '../assets/icons/left-arrow.png';
 // };
 
 // const RightArrow = () => {
-//   const { scrollNext, isLastItemVisible } = useContext(VisibilityContext);
+//   const { scrollNext } = useContext(VisibilityContext);
 
 //   return (
 //     <Typography onClick={() => scrollNext() } className="left-arrow">
@@ -30,7 +30,11 @@ import LeftArrowIcon from '../assets/icons/left-arrow.png';
 
 const HorizontalScrollbar = ({ data, bodyPart, setBodyPart, isBodyParts }) => {
   return (
-    <ScrollMenu>
+    <ScrollMenu
+    class='scrollmenu'
+    // Header={LeftArrow}
+    // Footer={RightArrow}
+    >
         {data.map((item) => 
         <Box
         key={item.id || item} 

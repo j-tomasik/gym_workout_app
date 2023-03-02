@@ -10,9 +10,14 @@ body {
 
 }
 
-::-webkit-scrollbar {
-    width: 0px;
+::-webkit-scrollbar-track {
+    width: 10px;
+    background-color: red;
 }
+
+/* ::-webkit-scrollbar-thumb {
+    color: red;
+} */
 
 .right-arrow,
 .left-arrow {
@@ -46,6 +51,7 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(251, 201, 95);
 }
 
 .detail-image {
@@ -90,7 +96,7 @@ body {
 
 .exercise-card:hover,
 .bodyPart-card:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.15, 1.15);
 }
 
 .search-btn:hover {
@@ -143,3 +149,4 @@ body {
         width: 280px;
     }
 }
+
